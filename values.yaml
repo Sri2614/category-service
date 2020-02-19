@@ -45,7 +45,7 @@ ingress:
       paths:
         - /
 
-  tls: []
+  tls: 
    - secretName: revaturelabs-cert
      hosts:
        - caliber-category-service.revaturelabs.com
