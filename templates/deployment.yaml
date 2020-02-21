@@ -35,7 +35,7 @@ spec:
           - name: CALIBER_CATEGORY_DB_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: {{ template "caliber-category-postgres-service.fullname" . }}
+                name: {{ .Values.caliber-category-postgres-service.fullnameOverride }}
                 key: postgresql-password
           ports:
             - name: http
