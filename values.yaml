@@ -114,7 +114,7 @@ caliber-category-postgres-service:
     # name:
 
   replication:
-    enabled: true
+    enabled: false
     user: repl_user
     password: repl_password
     slaveReplicas: 2
