@@ -69,7 +69,7 @@ tolerations: []
 affinity: {}
 
 caliber-category-postgres-service:
-  enabled: false
+  enabled: true
   global:
     postgresql: {}
 
