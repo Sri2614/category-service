@@ -86,7 +86,7 @@ caliber-category-postgres-service:
   # nameOverride:
   fullnameOverride: caliber-category-db
   volumePermissions:
-    enabled: false
+    enabled: true
     image:
       registry: docker.io
       repository: bitnami/minideb
@@ -125,7 +125,7 @@ caliber-category-postgres-service:
     ## NOTE: It cannot be > slaveReplicas
     numSynchronousReplicas: 1
     ## Replication Cluster application name. Useful for defining multiple replication policies
-    applicationName: my_application
+    applicationName: caliber-category-db-app
 
   ## PostgreSQL admin password (used when `postgresqlUsername` is not `postgres`)
   ## ref: https://github.com/bitnami/bitnami-docker-postgresql/blob/master/README.md#creating-a-database-user-on-first-run (see note!)
