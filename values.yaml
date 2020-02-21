@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-
+appname: caliber
 image:
   repository: gcr.io/caliber-dev-254513/category
   tag: latest
