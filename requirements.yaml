@@ -1,0 +1,6 @@
+dependencies:
+  - name: postgresql
+    alias: caliber-category-postgres-service
+    version: 8.4.0
+    repository: https://kubernetes-charts.storage.googleapis.com
+    condition: caliber-category-postgres-service.enabled
