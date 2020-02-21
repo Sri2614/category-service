@@ -14,3 +14,4 @@ spec:
   selector:
     app.kubernetes.io/name: {{ include "caliber-category-service.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/app: {{ include "caliber-category-service.appname" . }}
