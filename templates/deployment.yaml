@@ -31,6 +31,12 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+          - name: CALIBER_CATEGORY_DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "postgresql.fullname" . }}
+                key: postgresql-password
           ports:
             - name: http
               containerPort: 80
