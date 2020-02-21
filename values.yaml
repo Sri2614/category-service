@@ -45,8 +45,8 @@ ingress:
       paths:
         - /
 
-  tls: 
-   - secretName: gitlab-gitlab-tls
+  tls:  
+   - secretName: revaturelabs-cert
      hosts:
        - caliber-category-service.revaturelabs.com
 
