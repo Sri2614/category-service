@@ -33,7 +33,7 @@ securityContext: {}
 
 service:
   annotations: 
-    external-dns.alpha.kubernetes.io/hostname: revaturelabs.com.
+    # external-dns.alpha.kubernetes.io/hostname: revaturelabs.com.
   type: ClusterIP
   port: 80
 
