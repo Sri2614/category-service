@@ -32,8 +32,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  annotations: {}
-    # external-dns.alpha.kubernetes.io/hostname: revaturelabs.com.
+  annotations: 
+    external-dns.alpha.kubernetes.io/hostname: revaturelabs.com.
   type: ClusterIP
   port: 80
 
