@@ -1,7 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "caliber-category-service.fullname" . }}
+{{- if .Values.service.annotations }}
+  annotations:
+{{ tpl (toYaml .Values.service.annotations) . | indent 4 }}
+{{- end }}
+  name: {{ include "caliber-category-service.fullname" . }}  
   labels:
 {{ include "caliber-category-service.labels" . | indent 4 }}
 spec:
