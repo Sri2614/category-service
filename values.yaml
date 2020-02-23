@@ -5,7 +5,7 @@
 replicaCount: 1
 appname: caliber
 image:
-  repository: pkboy231995/studentapp
+  repository: nginx
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -35,7 +35,7 @@ service:
   annotations: {}
     # external-dns.alpha.kubernetes.io/hostname: revaturelabs.com.
   type: ClusterIP
-  port: 8080
+  port: 80
 
 
 
