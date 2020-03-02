@@ -5,7 +5,7 @@
 replicaCount: 1
 appname: caliber
 image:
-  repository: nginx
+  repository: gcr.io/caliber-dev-254513/category
   tag: latest
   pullPolicy: IfNotPresent
 
